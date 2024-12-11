@@ -4,41 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Cléo Henrioux, Développeur freelance à Lille, spécialisé en développement web, SEO et optimisation pour les moteurs de recherche. Découvrez mes compétences et projets. Contactez-moi pour vos besoins en développement.">
-    <meta name="keywords" content="Développeur Freelance Lille, SEO Lille, Développement web Lille, Création de site Lille, UX/UI Lille, Développeur Python Lille, Développeur JavaScript Lille, HTML, CSS, SQL, C++">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://cleohenrioux.me/" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+
+    <!--  Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" as="style" onload="this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet"></noscript>
+    
+    <!-- Font  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="all">
+
+    <!--  CSS -->
+    <link rel="preload" href="assets/style.css" as="style">
+    <link rel="stylesheet" href="assets/style.css">
+
     <title>Cléo Henrioux - Développeur Freelance Lille</title>
 
     <script type="application/ld+json">
     {
-      "@context": "http://schema.org",
-      "@type": "Person",
-      "name": "Cléo Henrioux",
-      "jobTitle": "Développeur Freelance",
-      "url": "https://cleohenrioux.me",
-      "sameAs": [
-        "https://www.linkedin.com/in/cl%C3%A9o-h-3a492a2a1/",
-        "https://github.com/Shimizu33"
-      ]
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Cléo Henrioux",
+        "jobTitle": "Développeur Freelance",
+        "url": "https://cleohenrioux.me",
+        "sameAs": [
+            "https://www.linkedin.com/in/cl%C3%A9o-h-3a492a2a1/",
+            "https://github.com/Shimizu33"
+        ]
     }
     </script>
 </head>
 <body>
     <header>
         <a href="#acceuil" class="logo" title="Cléo Henrioux, Développeur Freelance Lille">Développeur Freelance Cléo Henrioux</a>
-        <nav>
-            <a href="#acceuil" class="active" title="Page d'accueil">Accueil</a>
+        <nav role="navigation" aria-label="Menu principal">
+            <a href="#acceuil" class="active" aria-current="page" title="Page d'accueil">Accueil</a>
             <a href="#projects" title="Mes projets de développement">Projets</a>
             <a href="#competences" title="Compétences en développement web">Compétences</a>
             <a href="#contact" title="Contactez-moi pour discuter de votre projet">Contact</a>
         </nav>
     </header>
 
-    <section class="home">
+    <section class="home" id="acceuil">
         <div class="home-img">
-            <img src="images/cleohenrioux-developpeur-lille.png" alt="Cléo Henrioux, Développeur Freelance Lille, photo de profil" loading="lazy" />
+            <picture>
+                <source srcset="assets/cleohenrioux-developpeur-lille.webp" type="image/webp">
+                <img src="assets/cleohenrioux-developpeur-lille.jpg" alt="Cléo Henrioux, Développeur Freelance Lille, photo de profil">
+            </picture>
         </div>
         <div class="home-content">
             <h1>Développeur Freelance Lille</h1>
@@ -59,17 +71,26 @@
         <h2>Mes Projets</h2>
         <div class="project-cards">
             <div class="project-card">
-                <img src="images/creationsite-commerce.png" alt="Création de site vitrine e-commerce" />
+                <picture>
+                    <source srcset="assets/creationsite-commerce.webp" type="image/webp">
+                    <img src="assets/creationsite-commerce.jpg" alt="Création de site vitrine e-commerce" loading="lazy">
+                </picture>
                 <h3>Site vitrine e-commerce</h3>
                 <p>Développement d'un site vitrine pour un e-commerce.</p>
             </div>
             <div class="project-card">
-                <img src="images/jeu-c-supemon-game.png" alt="Jeu C Supemon Game (inspiré de Pokémon)" />
+                <picture>
+                    <source srcset="assets/jeu-c-supemon-game.webp" type="image/webp">
+                    <img src="assets/jeu-c-supemon-game.jpg" alt="Jeu C Supemon Game (inspiré de Pokémon)" loading="lazy">
+                </picture>
                 <h3>Jeu C Supemon Game</h3>
-                <p>Création d'un jeu en C inspiré de Pokémon, avec une logique de combat et une interface console et une expérience utilisateur immersive.</p>
+                <p>Création d'un jeu en C inspiré de Pokémon, avec une logique de combat et une interface console immersive.</p>
             </div>
             <div class="project-card">
-                <img src="images/jeu-yinsh-python.png" alt="Jeu Yinsh développé avec Python et Pygame" />
+                <picture>
+                    <source srcset="assets/jeu-yinsh-python.webp" type="image/webp">
+                    <img src="assets/jeu-yinsh-python.jpg" alt="Jeu Yinsh développé avec Python et Pygame" loading="lazy">
+                </picture>
                 <h3>Jeu Yinsh</h3>
                 <p>Développement du jeu de plateau Yinsh en Python et Pygame, permettant un jeu fluide et interactif.</p>
             </div>
@@ -87,25 +108,23 @@
                 <li><i class="fas fa-cogs"></i> <strong>C / C++ </strong></li>
                 <li><i class="fab fa-python"></i> <strong>Python</strong></li>
                 <li><i class="fas fa-database"></i> <strong>Base de données :</strong> SQL</li>
-                <li><i class="fas fa-search"></i> <strong>SEO :</strong>Optimisation pour les moteurs de recherche</li>
+                <li><i class="fas fa-search"></i> <strong>SEO :</strong> Optimisation pour les moteurs de recherche</li>
             </ul>
         </div>
     </section>
     
     <section id="contact">
-        <h2>Contactez-moi</h2>
+        <h2 id="contact-form">Contactez-moi</h2>
         <ul>
-            <li>Email : <a href="mailto:cleo.henrioux@supinfo.com" title="Envoyer un email à Cléo Henrioux" aria-label="Envoyer un email à Cléo Henrioux">cleo.henrioux@supinfo.com</a></li>
-            <li>LinkedIn : <a href="https://www.linkedin.com/in/cl%C3%A9o-h-3a492a2a1/" title="Voir le profil LinkedIn de Cléo Henrioux" aria-label="Voir le profil LinkedIn de Cléo Henrioux">Linkdin Cléo Henrioux</a></li>
+            <li>Email : <a href="mailto:cleo.henrioux@supinfo.com">cleo.henrioux@supinfo.com</a></li>
+            <li>LinkedIn : <a href="https://www.linkedin.com/in/cl%C3%A9o-h-3a492a2a1/">Cléo Henrioux</a></li>
         </ul>
-        <p>Vous avez un projet ou des questions ? N'hésitez pas à me contacter via les informations ci-dessous :</p>
         <form action="https://api.web3forms.com/submit" method="POST" aria-labelledby="contact-form">
             <input class="input-contact" type="hidden" name="apikey" value="cf2887ee-96ac-4ee2-a860-457b40686e48">
             
             <label for="nom" aria-label="Entrez votre nom">Nom :</label>
             <input class="input-contact" type="text" id="nom" name="nom" required aria-required="true" aria-label="Entrez votre nom" placeholder="Votre nom">
             <br>
-    
             <label for="email" aria-label="Entrez votre adresse email">E-mail :</label>
             <input class="input-contact" type="email" id="email" name="email" required aria-required="true" aria-label="Entrez votre adresse email" placeholder="Votre email">
             <br>
@@ -123,23 +142,15 @@
                 J'accepte d'être recontacté
             </label>
             <br>
-    
             <button id="button-contact" type="submit" aria-label="Envoyer le formulaire de contact">Envoyer</button>
         </form>
-        <h3>Pourquoi me contacter ?</h3>
-        <p>
-            En tant que développeur freelance basé à Lille, je peux vous accompagner sur des projets variés, que ce soit pour développer un site web, 
-            créer une application mobile ou optimiser votre présence en ligne avec le SEO. 
-            Ensemble, nous concrétiserons vos idées avec efficacité et professionnalisme.
-        </p>
+        
     </section>
-    
     
     <footer>
         <p>
             Ce site fait partie d’un projet SEO visant à prouver mes capacités à optimiser un site pour les moteurs de recherche. 
-            N'hésitez pas à me <a href="#contact">contacter</a> pour discuter de vos projets. 
-            Retrouvez-moi également sur <a href="https://www.linkedin.com/in/cl%C3%A9o-h-3a492a2a1/" title="Cléo Henrioux sur LinkedIn">LinkedIn</a>.
+            Retrouvez-moi sur <a href="https://www.linkedin.com/in/cl%C3%A9o-h-3a492a2a1/">LinkedIn</a> pour en discuter.
         </p>
     </footer>
 </body>
