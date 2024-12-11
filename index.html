@@ -41,9 +41,11 @@
             <a href="#acceuil" class="active" aria-current="page" title="Page d'accueil">Accueil</a>
             <a href="#projects" title="Mes projets de développement">Projets</a>
             <a href="#competences" title="Compétences en développement web">Compétences</a>
+            <a href="#formation" title="Formation et parcours">Formation</a>
             <a href="#contact" title="Contactez-moi pour discuter de votre projet">Contact</a>
         </nav>
     </header>
+    
 
     <section class="home" id="acceuil">
         <div class="home-img">
@@ -99,19 +101,48 @@
     
     <section class="competences" id="competences">
         <h2>Mes Compétences</h2>
-        <p>Je maîtrise plusieurs langages et technologies. Voici mes principales compétences en tant que Développeur Freelance à Lille :</p>
-        <div class="competences-list">
-            <ul>
-                <li><i class="fab fa-figma"></i> <strong>UX/UI Design :</strong> Figma, Adobe XD</li>
-                <li><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i> <strong>Frontend :</strong> HTML, CSS, JavaScript</li>
-                <li><i class="fab fa-php"></i> <i class="fab fa-symfony"></i> <strong>PHP, Symfony</strong></li>
-                <li><i class="fas fa-cogs"></i> <strong>C / C++ </strong></li>
-                <li><i class="fab fa-python"></i> <strong>Python</strong></li>
-                <li><i class="fas fa-database"></i> <strong>Base de données :</strong> SQL</li>
-                <li><i class="fas fa-search"></i> <strong>SEO :</strong> Optimisation pour les moteurs de recherche</li>
-            </ul>
+        <div class="competences-container">
+            <div class="competences-techniques">
+                <h3>Compétences Techniques</h3>
+                <ul>
+                    <li><i class="fab fa-figma"></i> <strong>UX/UI Design :</strong> Figma, Adobe XD</li>
+                    <li><i class="fab fa-html5"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-js"></i> <strong>Frontend :</strong> HTML, CSS, JavaScript</li>
+                    <li><i class="fab fa-php"></i> <i class="fab fa-symfony"></i> <strong>PHP, Symfony</strong></li>
+                    <li><i class="fas fa-cogs"></i> <strong>C / C++ </strong></li>
+                    <li><i class="fab fa-python"></i> <strong>Python</strong></li>
+                    <li><i class="fas fa-database"></i> <strong>Base de données :</strong> SQL</li>
+                    <li><i class="fas fa-search"></i> <strong>SEO :</strong> Optimisation pour les moteurs de recherche</li>
+                </ul>
+            </div>
+            <div class="competences-interpersonnelles">
+                <h3>Compétences Interpersonnelles</h3>
+                <ul>
+                    <li><i class="fas fa-paw"></i> <strong>Pet Sitter expérimenté</strong></li>
+                    <li><i class="fas fa-briefcase-medical"></i> <strong>Titulaire du brevet de secourisme</strong></li>
+                    <li><i class="fas fa-paint-brush"></i> <strong>Maîtrise de l'outil Procreate</strong></li>
+                </ul>
+            </div>
         </div>
     </section>
+    
+    <section class="formation" id="formation">
+        <h2>Formation</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>2023 - Aujourd'hui</h3>
+                <p><strong>Preparation Master Ingenieur</strong> - SUPINFO Lille</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2022 - 2023</h3>
+                <p><strong>Licence Biologie Portail SVTE</strong> - Université Villeneuves d'Ascq</p>
+            </div>
+            <div class="timeline-item">
+                <h3>2017 - 2020</h3>
+                <p><strong>Baccalauréat Scientifique</strong> - Lycée Charlotte Perriand Genech</p>
+            </div>
+        </div>
+    </section>
+    
     
     <section id="contact">
         <h2 id="contact-form">Contactez-moi</h2>
@@ -144,7 +175,6 @@
             <br>
             <button id="button-contact" type="submit" aria-label="Envoyer le formulaire de contact">Envoyer</button>
         </form>
-        
     </section>
     
     <footer>
