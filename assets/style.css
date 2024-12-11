@@ -508,3 +508,114 @@ footer a:hover {
     color: var(--primary-color); 
     border-bottom: 3px solid var(--primary-color); 
 }
+
+
+@media (max-width: 768px) {
+    .competences-container {
+        flex-wrap: wrap;
+        padding: 0 10px;
+    }
+
+    .competences-techniques li,
+    .competences-interpersonnelles li {
+        font-size: 18px;
+    }
+
+    .fas.fa-paw {
+        font-size: 24px;
+    }
+}
+@media (max-width: 768px) {
+    .projects {
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-top: 64px;
+    }
+
+    .project-card {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .project-card h3 {
+        font-size: 22px;
+    }
+
+    .project-card p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    .project-card h3 {
+        font-size: 20px;
+    }
+
+    .project-card p {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;  
+        margin-top: 80px;
+        flex-direction: column; 
+    }
+
+    .home .home-content h1 {
+        font-size: 50px; 
+    }
+
+    .home-content h3 {
+        font-size: 32px;  
+    }
+
+    .home-content p {
+        font-size: 18px;
+    }
+
+
+    .home img {
+        width: 100%; 
+        height: auto; 
+        max-width: 400px;  
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home .home-content h1 {
+        font-size: 40px; 
+    }
+
+    .home-content h3 {
+        font-size: 28px;
+    }
+
+    .home-content p {
+        font-size: 16px;  
+    }
+
+    .home img {
+        max-width: 350px;  
+    }
+}
+
+
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+}
