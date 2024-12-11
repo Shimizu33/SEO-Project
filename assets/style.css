@@ -109,7 +109,7 @@ nav {
 }
 
 section {
-    padding: 180px 54px;
+    padding: 132px 54px;
 }
 
 /*==================== Home ====================*/
@@ -118,7 +118,7 @@ section {
     justify-content: center;
     align-items: center;
     gap: 128px;
-    margin-top: 96px;
+    margin-top: 64px;
 }
 
 .home .home-content h1 {
