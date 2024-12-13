@@ -1121,26 +1121,27 @@ section.why-freelancer a {
 section.why-freelancer .btn {
     font-size: 16px;
 }
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+/* Contenu principal (tout sauf le footer) */
+.main-content {
+    flex: 1;
+}
+
+/* Footer */
 footer {
     background-color: #111;
     color: #fff;
     padding: 40px 20px;
     font-size: 14px;
     line-height: 1.6;
-    position: relative;
-    bottom: 0;
+    text-align: center;
     width: 100%;
-}
-
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-body {
-    display: block;
-    min-height: 100%;
-    position: relative;
+    margin-top: auto; /* Pousse le footer vers le bas */
 }
 
 
