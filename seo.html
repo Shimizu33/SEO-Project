@@ -15,10 +15,13 @@
     <meta property="og:type" content="website">
 
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" as="style" onload="this.rel='stylesheet'">
-    <noscript><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet"></noscript>
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    </noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" media="all">
+    <link rel="preload" href="assets/style.css" as="style">
     <link rel="stylesheet" href="assets/style.css">
-   
+
     <title>Développeur Freelance à Lille - Cléo Henrioux | Web & SEO</title>
 
     <script type="application/ld+json">
@@ -37,14 +40,20 @@
 </head>
 <body>
     <header>
-        <a href="https://cleohenrioux.me#acceuil" class="logo" title="Cléo Henrioux, Développeur Freelance Lille">Développeur Freelance Cléo Henrioux</a>
-        <nav role="navigation" aria-label="Menu principal">
-            <a href="https://cleohenrioux.me#acceuil" class="active" aria-current="page" title="Page d'accueil">Accueil</a>
-            <a href="https://cleohenrioux.me#services" title="Mes services de développement à Lille">Services</a>
-            <a href="https://cleohenrioux.me#competences" title="Compétences en développement web à Lille">Compétences</a>
-            <a href="https://cleohenrioux.me#formation" title="Formation et parcours de développeur freelance Lille">Formation</a>
-            <a href="https://cleohenrioux.me#contact" title="Contactez-moi, développeur freelance à Lille">Contact</a>
-        </nav>               
+        <a href="index.html" class="logo" title="Cléo Henrioux, Développeur Freelance à Lille">Développeur Freelance Cléo Henrioux</a>
+    
+        <input type="checkbox" class="menu-toggle" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+            <i class="fas fa-bars"></i>
+        </label>
+    
+        <nav id="navbar" role="navigation" aria-label="Menu principal">
+            <a href="index.html" class="active" aria-current="page" title="Page d'accueil de Cléo Henrioux, Développeur Freelance à Lille">Accueil</a>
+            <a href="services.html" title="Découvrez mes services de développement web, SEO, et plus." aria-label="Mes services de développement web">Services</a>
+            <a href="competences.html" title="Mes compétences techniques et mon expertise en développement web" aria-label="Mes compétences en développement web et SEO">Compétences</a>
+            <a href="formation.html" title="Parcours et formations suivies pour devenir Développeur Freelance" aria-label="Formation et parcours de Cléo Henrioux">Formation</a>
+            <a href="contact.html" title="Contactez-moi pour discuter de votre projet web" aria-label="Me contacter pour un projet web">Contact</a>
+        </nav>
     </header>
 
     <section class="home" id="acceuil">
