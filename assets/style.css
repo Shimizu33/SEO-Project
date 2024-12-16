@@ -654,7 +654,6 @@
  body,
  header {
      width: 100%;
-     padding: 0px32px;
  }
  .logo,
  nav a {
@@ -1235,7 +1234,7 @@
          font-size: 44px;
      }
      .home img {
-         width: 300px;
+         width: 100px;
          height: auto;
      }
  }
