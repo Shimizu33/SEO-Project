@@ -695,12 +695,15 @@
      text-decoration: none;
  }
  :root {
-     --primary-color: #87A2FB;
-     --secondary-color: #50e3c2;
-     --background-color: #000000;
-     --text-color: #ffffff;
-     --border-color: #ffffff26;
- }
+    --primary-color: #87A2FB;
+    --secondary-color: #50e3c2;
+    --background-color: #000000;
+    --text-color: #ffffff;
+    --border-color: #ffffff26;
+    --link-color: #9D7BFF;
+    --link-hover-color: #B599FF;
+}
+
  * {
      margin: 0;
      padding: 0;
@@ -1108,7 +1111,7 @@
      font-size: 1.2em;
  }
  section.why-freelancer a {
-     color: var(--primary-color);
+     color: var(--link-color);
      transition: color 0.3s;
  }
  section.why-freelancer .btn {
@@ -1179,7 +1182,7 @@
  .footer-contact ul li a:hover,
  .footer-nav ul li a:hover,
  .footer-social ul li a:hover {
-     color: #469cff;
+     color: var(--link-color);
  }
  .footer-legal {
      margin-top: 20px;
