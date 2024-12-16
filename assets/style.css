@@ -1234,7 +1234,7 @@
          font-size: 44px;
      }
      .home img {
-         width: 100px;
+         width: 250px;
          height: auto;
      }
  }
@@ -1255,7 +1255,7 @@
      }
      .home img,
      .services img {
-         width: 300px;
+         width: 200px;
          height: auto;
      }
      .home .home-content h1 {
