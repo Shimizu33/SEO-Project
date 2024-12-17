@@ -749,6 +749,9 @@
      .home .home-content h1 {
          font-size: 44px;
      }
+     .home .home-content h2{
+        font-size: 32px;
+     }
      .home img {
          width: 250px;
          height: auto;
@@ -774,8 +777,14 @@
          width: 200px;
          height: auto;
      }
-     .home .home-content h1 {
+    .home .home-content h1 {
          font-size: 32px;
+     }
+    .home .home-content h2, #why-freelancer h2 {
+        font-size: 24px;
+     }
+    .about-content h3, #why-freelancer h3 {
+        font-size: 20px;
      }
  }
  @media (min-width: 996px) {
